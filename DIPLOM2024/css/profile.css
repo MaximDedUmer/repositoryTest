@@ -1,0 +1,92 @@
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #292626;
+    color: #000000;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 70px;
+    min-height:77vh;
+}
+
+.profile {
+    background-color: #FFFCF2;
+    border: 2px solid #292626;
+    border-radius: 3px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile-header img {
+    max-width: 150px;
+    height: auto;
+    border: 2px solid #EB5E28;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-header .h2 {
+    font-size: 28px;
+    margin-top: 15px;
+}
+
+.profile-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info .hr {
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #EB5E28;
+    padding-bottom: 10px;
+}
+
+.profile-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-info ul li {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.profile-actions {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.profile-actions .but-new {
+    background-color: #EB5E28;
+    color: #FFFCF2;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.profile-actions .but-new:hover {
+    background-color: #292626;
+}
