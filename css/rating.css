@@ -1,0 +1,87 @@
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 70px;
+    background-color: #FFFCF2;
+    min-height:77vh;
+    border-left: 2px solid #292626;
+    border-right: 2px solid #292626;
+    text-align: center;
+}
+.main h1{
+    font-size: 32px;
+    max-width:400px ;
+    font-family: 'ARTstr';
+    color: #EB5E28;
+}
+.paper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.paper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.right2{
+    margin-top: 20px;
+}
+.rat{
+    font-size: 25px;
+    font-family: 'ARTstr';
+    color: red;
+    line-height: 1.5;
+}
+.big{
+    font-size: 25px;
+    font-family: 'ARTstr';
+    line-height: 1.5;
+    color: black;
+}
+.prepod{
+    font-size: 25px;
+    line-height: 1.5;
+    font-family: 'ARTstr';
+}
+.right{
+    display: flex;
+    flex-direction: column;
+}
+tbody td{
+    border: none;
+    border-top:1px solid #EB5E28 ;
+    line-height: 1.5;
+    border-left: 15px solid white;
+    border-right: 15px solid white;
+    font-size: 18px;
+    
+}
+thead th{
+    border: none;
+    font-family: 'ART';
+    font-size: 18px;
+    padding: 5px;
+}
+table{
+    border: 1px solid black;
+    background-color: white;
+ 
+}
+.t1 {
+    text-align: start;
+}
+.t2 {
+    text-align: center;
+}
+.rating{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+.rating:hover{
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}

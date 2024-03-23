@@ -1,0 +1,281 @@
+/* Стили для блока с названием и логотипом */
+.college-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFCF2;
+    padding: 20px;
+    padding-top: 68px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.college-info-text {
+    flex-basis: 50%;
+    font-size: 1.6vw;
+    font-family: 'DaysSansBlack';
+    line-height: 1.4;
+}
+
+.college-info-image {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.college-info-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Стили для контента */
+.content {
+    background-color: #FFFCF2;
+}
+
+/* Стили для блока "Последние новости" */
+.news {
+    background-color: #000000;
+    color: #EB5E28;
+    padding: 20px;
+    padding-top: 0;
+    font-family: 'ARTstr';
+}
+.news h2{
+    padding-top:20px;
+    font-size: 32px;
+    background-color: #000000;
+    max-width:400px ;
+}
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 70vw; /* Ширина видимой области слайда */
+    margin: 0 auto;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 1s; /* Длительность анимации */
+}
+
+.carousel-slide {
+    width: 70vw; /* Ширина каждого слайда */
+    flex: 0 0 70vw; 
+}
+
+.carousel-slide img {
+    width: 70vw;
+    height: auto;
+}
+
+
+.carousel-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.prev-button,
+.next-button {
+    background-color: #FFFCF2;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    font-family: 'ART';
+
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: #EB5E28;
+    color: #FFFFFF;
+}
+
+
+/* Стили для блока "Почему выбирают нас" */
+.reasons {
+    background-color: #292626;
+    color: #EB5E28;
+    padding: 20px;
+
+}
+
+.reasons h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'ARTstr';
+}
+
+.reasons-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.reason h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: 'ART';
+}
+.reason img{
+    border-radius: 4px;
+}
+.reason-column {
+    flex-basis: calc(50% - 10px);
+    text-align: center;
+    margin: 0 5px;
+}
+
+/* Стили для блока "Подписаться на рассылку" */
+.subscribe {
+    background-color: #000000;
+    color: #CCC5B9;
+    padding: 20px;
+}
+
+.subscribe h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'ARTstr';
+}
+
+.subscribe p {
+    font-family: 'ART';
+    margin-bottom: 20px;
+}
+
+#subscribe-form {
+    display: flex;
+    justify-content: center;
+}
+
+#subscribe-form input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 0;
+    max-width:300px;
+    font-family: 'ART';
+}
+
+#subscribe-form button {
+    background-color: #FFFCF2;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    margin-left: 10px;
+    font-family: 'ART';
+}
+
+#subscribe-form button:hover {
+    background-color: #EB5E28;
+    color: #FFFFFF;
+}
+
+/* Стили для планшетов */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .carousel-slide {
+        width: 50%;
+    }
+}
+
+/* Стили для десктопов */
+@media (min-width: 1025px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media (max-width: 1650px) {
+    .college-info-text{
+        font-size: 1.8vw;
+    }
+}
+@media (max-width: 1550px) {
+    .college-info-text{
+        font-size: 1.9vw;
+    }
+ 
+}
+@media (max-width: 1460px) {
+    .college-info-text{
+        font-size: 2vw;
+    }
+}
+@media (max-width: 1150px) {
+    .college-info-text{
+        font-size: 2.2vw;
+    }
+}
+@media (max-width: 1050px) {
+    .carousel-slide{
+        width: 70vw;
+    }
+    .carousel-container {
+        display: flex;
+        transition: transform 1s; /* Длительность анимации */
+        width: 70vw;
+    }
+}
+@media (max-width: 825px) {
+    .menu ul li{
+       display: none;
+    }
+    .header{
+        height: 48px;
+    }
+    .menu ul {
+        padding: 0;
+    }
+    .burger-button{
+        display: flex;
+    }
+    .college-info-text{
+        font-size: 3.3vw;
+    }
+}
+@media (max-width: 480px) {
+    .menu {
+        text-align: center;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .profile {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .profile a {
+        margin: 0;
+    }
+
+    .profile-menu {
+        top: 30px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .carousel-slide {
+        width: 100%;
+    }
+    .college-info-text{
+        font-size: 4vw;
+    }
+}

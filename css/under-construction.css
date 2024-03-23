@@ -1,0 +1,17 @@
+.main {
+
+    margin: 0 auto;
+    padding: 20px; 
+    background-color: #FFFCF2;
+}
+
+.construction {
+    text-align: center;
+    padding: 30px;
+    font-family: 'ARTstr';
+    height: 73.6vh;
+}
+
+.construction p {
+    font-size: 20px;
+}
